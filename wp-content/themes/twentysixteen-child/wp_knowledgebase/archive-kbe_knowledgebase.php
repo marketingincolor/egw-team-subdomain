@@ -228,7 +228,9 @@
     <!--content-->
 
     <!--aside-->
-    <div class="kbe_aside <?php echo $kbe_sidebar_class; ?>">
+
+    <div class="kbe_aside <?php echo $kbe_sidebar_class; ?> show-for-large-up">
+
     <?php
         if((KBE_SIDEBAR_HOME == 2) || (KBE_SIDEBAR_HOME == 1)){
             dynamic_sidebar('kbe_cat_widget');

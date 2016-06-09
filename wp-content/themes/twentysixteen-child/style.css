@@ -91,7 +91,7 @@ body {background: rgba(137, 138, 142, 0);}
 #kbe_content .kbe_leftcol h3 {color: #808080; font-weight: 700;}
 .kbe_search_field input[type=text] {width: 100% !important; margin-top;}
 
-#kbe_container{font-family: 'Open Sans', sans-serif;}
+#kbe_container{font-family: 'roboto', sans-serif;}
 
 #kbe_content .kbe_leftcol .kbe_reply span {float:right;}
 
@@ -148,22 +148,14 @@ textarea:focus {border-color:#a46bad !important;}
 /*Smartphones*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 482px) {
 
-    .header-image a {
-        padding:1em;
-        text-align: center;
-    }
-
+    .header-image a { padding:1em; text-align: center; }
     .entry-last {float: left; text-align: left;font-size: .7em;width: 100%;padding-bottom: 2em;}
     .entry-original{float:left;font-size: .7em;width: 100%;}
     .row{height:3em;}
     #kbe_container{font-family: 'Open Sans', sans-serif; padding:1em;}
+    .kbe_widget {display:none;}
     .kbe_widget li a {display:none;}
-    .kbe_leftcol { }
-    #kbe_container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 1em;
-    }
+    #kbe_container {width: 100%;margin: 0 auto;padding: 1em;}
 
 }
 

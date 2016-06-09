@@ -120,6 +120,7 @@
 
 /*===> content <===*/
 #kbe_content {
+    font-family: 'roboto', sans-serif;
 }
 .kbe_content_full{
     width: 980px !important;
@@ -1091,4 +1092,6 @@
         margin-bottom: 25px;
         padding: 0 0 16px 30px;
     }
+
+
 }

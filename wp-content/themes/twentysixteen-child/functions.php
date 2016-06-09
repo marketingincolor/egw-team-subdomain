@@ -5,7 +5,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:
 
-        
+
 if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
     function chld_thm_cfg_parent_css() {
         wp_enqueue_style( 'chld_thm_cfg_parent', trailingslashit( get_template_directory_uri() ) . 'style.css' );
@@ -30,3 +30,9 @@ function last_modified($format='') {
 	echo mysql2date($format, $post_mod_date);
 }
 // END ENQUEUE PARENT ACTION
+
+// Add favicon
+function blog_favicon() {
+	echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_bloginfo('stylesheet_directory').'/images/favicon.ico" />' . "\n";
+}
+add_action('wp_head', 'blog_favicon');
