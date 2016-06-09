@@ -17,14 +17,11 @@ This repo shares the files for the 'team' subdomain for the primary Evergreen We
 |---	|---	|
 |  Avatar 	|   	|
 | ManageWP-Worker 	|     |
-|   Members	|   	|
-Avatar
-ManageWP-Worker
-Members
-Registered Users Only
-Shortcodes Ultimate
-WordPress Importer
-WP-Knowledgebase
+|  Registered Users Only|   	|
+|   Shortcodes Ultimate|   	|
+|   WordPress Importer|   	|
+|   WP-Knowledgebase	|   	|
+
 
 
 
