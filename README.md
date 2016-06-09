@@ -2,6 +2,7 @@
 # egw-team-subdomain
 ======
 Contributors: adamdoe@github
+
 Project Manager: JP, CP
 
 Tags: evergreen,wellness, team, subdomain
@@ -15,12 +16,12 @@ This repo shares the files for the 'team' subdomain for the primary Evergreen We
 #### Plugins
 |  Plugin 	|  URL 	|
 |---	|---	|
-|  Avatar 	|   	|
-| ManageWP-Worker 	|     |
-|  Registered Users Only|   	|
-|   Shortcodes Ultimate|   	|
-|   WordPress Importer|   	|
-|   WP-Knowledgebase	|   	|
+|  Avatar 	|  https://wordpress.org/plugins/avatar/ 	|
+| ManageWP-Worker 	|  https://wordpress.org/plugins/worker/   |
+|  Registered Users Only |  https://wordpress.org/plugins/registered-users-only/ 	|
+|   Shortcodes Ultimate | https://wordpress.org/plugins/shortcodes-ultimate/ |
+|   WordPress Importer |  https://wordpress.org/plugins/wordpress-importer/ 	|
+|   WP-Knowledgebase	|  https://wordpress.org/plugins/wp-knowledgebase/ 	|
 
 
 
