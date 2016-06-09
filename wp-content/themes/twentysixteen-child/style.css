@@ -59,7 +59,10 @@ body {background: rgba(137, 138, 142, 0);}
  * -----------------------------------------------------------------------------
  */
  ///* TODO: Make links work without changing home page link color. */
-#kbe_leftcol { width: 75%; }
+ .kbe_content_right {
+    width: 75% !important;
+    float: right;
+}
 #kbe_content .kbe_leftcol a {  }
 #kbe_content .kbe_content_full p, ol { font-size: 14px; }
 .kbe_leftcol{ font-size: 14px !important; }
