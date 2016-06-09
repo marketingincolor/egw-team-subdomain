@@ -634,10 +634,15 @@
 }
 
 /*======> responsive layout <======*/
+/*iPhone 5*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 570px) {
+    .kbe_widget { display:none; }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     #kbe_content .kbe_leftcol {
 
     }
+    .kbe_widget { display:initial !important; }
     #kbe_content .kbe_category {
         width: 100%;
         display: inline-block;

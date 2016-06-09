@@ -54,5 +54,12 @@
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
+<!-- Foundation
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script src="https://cdn.jsdelivr.net/foundation/6.2.2/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
 </body>
 </html>

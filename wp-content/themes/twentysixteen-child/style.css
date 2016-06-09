@@ -171,12 +171,12 @@ textarea:focus {border-color:#a46bad !important;}
 @media only screen and (min-device-width : 320px) and (max-device-width : 570px) {
 	.header-image { padding: 1em; }
     #kbe_container{font-family: 'Open Sans', sans-serif; padding:1em;}
-    .kbe_widget li a {display:none;}
+    .kbe_widget {display:none !important;}
 
 }
 @media only screen and (min-device-width : 568px) and (max-device-width : 768px) {
     #kbe_container {padding:1em;}
-    .kbe_widget li a {display:none;}
+
 
 }
 @media screen and (min-width: 481px) and (max-width: 640px) {
@@ -198,6 +198,7 @@ textarea:focus {border-color:#a46bad !important;}
         text-align: left;
         position: relative;
     }
+    .kbe_aside .kbe_aside_left { display:initial; }
     #kbe_container{font-family: 'Open Sans', sans-serif; padding:1em;}
 		.kbe_aside.kbe_aside_left {display: none;}
 		.kbe_content_right{width:100% !important;}
