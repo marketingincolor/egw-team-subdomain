@@ -1,7 +1,7 @@
 <?php
     get_header('knowledgebase');
     global $wpdb;
-    
+
     // load the style and script
     wp_enqueue_style ( 'kbe_theme_style' );
     if( KBE_SEARCH_SETTING == 1 ){
@@ -16,7 +16,7 @@
     } elseif(KBE_SIDEBAR_HOME == 2) {
         $kbe_content_class = 'class="kbe_content_left"';
     }
-    
+
     // Classes For sidebar div
     if(KBE_SIDEBAR_HOME == 0) {
         $kbe_sidebar_class = 'kbe_aside_none';
@@ -27,7 +27,12 @@
     }
 ?>
 <div id="kbe_container">
-   
+    <div class="header-image">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+            <img src="<?php header_image(); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id ) ); ?>" sizes="<?php echo esc_attr( $custom_header_sizes ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+        </a>
+    </div><!-- .header-image -->
+
     <!--Breadcrum-->
     <?php
         if(KBE_BREADCRUMBS_SETTING == 1){
@@ -39,7 +44,7 @@
         }
     ?>
     <!--/Breadcrum-->
-    
+
     <!--search field-->
     <?php
         if(KBE_SEARCH_SETTING == 1){
@@ -47,7 +52,7 @@
         }
     ?>
     <!--/search field-->
-    
+
     <!--content-->
     <div id="kbe_content" <?php echo $kbe_content_class; ?>>
         <h1><?php echo get_the_title(KBE_PAGE_TITLE) ?></h1>
@@ -57,7 +62,7 @@
             <div class="kbe_categories">
             <?php
                $kbe_cat_args = array(
-                                    'orderby'       => 'terms_order', 
+                                    'orderby'       => 'terms_order',
                                     'order'         => 'ASC',
                                     'hide_empty'    => true,
                                     'parent'        => 0
@@ -69,19 +74,19 @@
                     $kbe_term_id = $kbe_taxonomy->term_id;
                     $kbe_term_slug = $kbe_taxonomy->slug;
                     $kbe_term_name = $kbe_taxonomy->name;
-                    
+
                     $kbe_taxonomy_parent_count = $kbe_taxonomy->count;
-                    
+
                     $children = get_term_children($kbe_term_id, KBE_POST_TAXONOMY);
-                    
+
                     $kbe_count_sum = $wpdb->get_var("SELECT Sum(count)
                                                      FROM wp_term_taxonomy
                                                      WHERE taxonomy = '".KBE_POST_TAXONOMY."'
                                                      And parent = $kbe_term_id"
                                                     );
-                    
+
                     $kbe_count_sum_parent = '';
-                
+
                     if($children) {
                         $kbe_count_sum_parent = $kbe_count_sum + $kbe_taxonomy_parent_count;
                     } else {
@@ -104,17 +109,17 @@
                                 <?php echo $kbe_term_name; ?>
                             </a>
                         </h2>
-                        
+
                         <?php
                             $kbe_child_cat_args = array(
-                                                    'orderby'       => 'terms_order', 
+                                                    'orderby'       => 'terms_order',
                                                     'order'         => 'ASC',
                                                     'parent'        => $kbe_term_id,
-                                                    'hide_empty'    => true, 
+                                                    'hide_empty'    => true,
                                                 );
 
                             $kbe_child_terms = get_terms(KBE_POST_TAXONOMY, $kbe_child_cat_args);
-                            
+
                             if($kbe_child_terms) {
                         ?>
                             <div class="kbe_child_category" style="display: none;">
@@ -221,7 +226,7 @@
 
     </div>
     <!--content-->
-    
+
     <!--aside-->
     <div class="kbe_aside <?php echo $kbe_sidebar_class; ?>">
     <?php
@@ -231,6 +236,6 @@
     ?>
     </div>
     <!--/aside-->
-    
+
 </div>
 <?php get_footer('knowledgebase'); ?>

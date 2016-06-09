@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /teamegw/
+RewriteBase /egw-team-subdomain/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /teamegw/index.php [L]
+RewriteRule . /egw-team-subdomain/index.php [L]
 </IfModule>
 
 # END WordPress
