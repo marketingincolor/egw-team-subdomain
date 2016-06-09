@@ -13,11 +13,11 @@ This repo shares the files for the 'team' subdomain for the primary Evergreen We
 
 
 #### Plugins
-|   	|   	
-|---	|---	
-|   	|   	
-|   	|   
-|   	|   	
+|   	|   	|
+|---	|---	|
+|   	|   	|
+|   	|     |
+|   	|   	|
 Avatar
 ManageWP-Worker
 Members
