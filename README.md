@@ -1,5 +1,4 @@
 ![EGW subdomain Logo](http://dev.marketingincolor.com/teamegw/wp-content/uploads/2016/06/EGW-Team-Header_03-1.jpg)
-# egw-team-subdomain
 ======
 Contributors: adamdoe@github
 
