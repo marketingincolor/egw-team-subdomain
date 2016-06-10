@@ -63,26 +63,6 @@
                 kbe_set_post_views(get_the_ID());
         ?>
                 <h1><?php the_title(); ?></h1>
-                <!--Original Date-->
-
-                <div class="row">
-                    <div class="entry-original">
-                        <?php echo 'Published: '?><?php echo the_date()?>
-                        <?php echo '@' ?>
-                        <?php echo the_time()?>
-                        <?php echo ' | By: '. get_author_name( $user_id ); ?>
-                    </div>
-
-                <!--Last Modified Date-->
-
-                    <div class="entry-last">
-                        <?php echo 'Updated:  '?>
-                        <?php echo last_modified(). ' By: '. get_author_name( $user_id ); ?>
-                    </div>
-
-                 </div>
-
-                 <!--/row-->
             <?php
                 the_content();
                 if(KBE_COMMENT_SETTING == 1){

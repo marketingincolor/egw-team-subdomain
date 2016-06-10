@@ -107,8 +107,8 @@ body {background: rgba(137, 138, 142, 0);}
 
 .row {width:100%; height: auto; height: 1.6em; margin-bottom: .5em; border-bottom: 1px solid darkgray}
 
-.button, input[type="submit"]:hover {background:#f28b00; color:#fff;}
-.button, input[type="submit"] {background:#fff;color:#838487; border:2px solid #f28b00; position:relative; float:right;}
+.button, input[type="submit"]:hover {background:#337234; color:#fff;}
+.button, input[type="submit"] {background:#fff;color:#838487; border:2px solid #337234; position:relative; float:right;}
 textarea:focus {border-color:#a46bad !important;}
 
 /*plus/minus image fix for KB dropdowns*/
